@@ -1,0 +1,124 @@
+body {
+    background-color: #FFFACA;
+}
+
+
+nav {
+    font-family: 'Montagu Slab', serif;
+    font-size: 35px;
+
+    display: flex;
+    float: right;
+
+    margin-top: 5px;
+    margin-right: 25px;
+}
+
+nav ul { 
+    list-style-type: none;
+
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+nav li {
+    margin-left: 60px; 
+    line-height: 60px;  
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: rgb(48, 187, 145);
+}
+
+
+
+
+#post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 110px;
+    
+    position: relative;
+    margin-top: -8px;
+    top: 125px;
+    font-family: 'Montagu Slab', serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+#bees {
+    display: flex;
+    flex-direction: row;
+}
+
+#bee1 {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    
+    animation: bounce1 2s infinite alternate;
+    margin-left: -200px; 
+    
+}
+
+#bee2 {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    
+    animation: bounce2 2s infinite alternate-reverse;
+    margin-right: -195px;
+}
+
+@keyframes bounce1 {
+    from { transform: translateY(-120px);
+    }
+
+    to { transform: translateY(-20px);
+    }
+}
+
+@keyframes bounce2 {
+    from { transform: translateY(-85px);
+    }
+
+    to { transform: translateY(23px);
+    }
+}
+
+#button {
+    text-align: center;
+    margin-top: 120px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+h3 {
+    font-family: 'Montagu Slab', serif;
+    font-size: 17px; 
+    margin-top: -33px; 
+}
+
+
+
+h3 a{
+    text-decoration: none;
+    color: black;
+}
+
+h3 a:hover {
+    color: rgb(48, 187, 145);
+}
